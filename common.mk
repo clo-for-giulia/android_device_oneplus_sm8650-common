@@ -301,6 +301,9 @@ PRODUCT_PACKAGES += \
     qspa_vendor.rc \
     vendor.qti.qspa-service
 
+# SMMU
+TARGET_USES_SMMU_PROXY := true
+
 # SecureElement
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
