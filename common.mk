@@ -154,10 +154,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.qcom.vendor_ramdisk \
     init.aospa.rc \
     init.class_main.sh \
     init.kernel.post_boot.sh \
