@@ -278,6 +278,9 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.osense.client-service \
     vendor.oplus.hardware.performance-service
 
+# Oplus IR
+$(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
+
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/overlay.mk)
 
