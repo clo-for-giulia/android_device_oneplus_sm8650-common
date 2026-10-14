@@ -81,6 +81,9 @@ PRODUCT_PACKAGES += \
     lib_bt_ble \
     lib_bt_bundle
 
+PRODUCT_COPY_FILES += \
+    $(AUDIO_HAL_DIR)/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
