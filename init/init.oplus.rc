@@ -97,6 +97,10 @@ on property:sys.boot_completed=1
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
 
+#DC Dimming
+on property:sys.boot_completed=1
+    write /sys/kernel/oplus_display/pwm_onepulse 1
+
 # Route HTPR mode to persist
 on property:debug.touch_polling_mode=0
     setprop persist.vendor.touch_polling_mode 0
