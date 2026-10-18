@@ -177,6 +177,9 @@ ro.telephony.default_network=26,26
 # Sensors
 persist.vendor.sensors.debug.hal=0
 
+# QSPM
+ro.vendor.qspm.enable=false
+
 # Update engine
 ro.virtual_ab.compression.threads=true
 
